@@ -1,0 +1,123 @@
+body{
+    font:1em normal Arial,sans-serif;
+    color:#34495E;
+  }
+  
+  table{
+    border-collapse:collapse;
+    width: 100%;
+  }
+  section .container-fluid div .data{
+    width:60%;
+  }
+  section .container-fluid div .data .data-in-table{
+    height: 520px;
+  }
+  
+  .blue{
+    border:2px solid #1ABC9C;
+  }
+  
+  .blue thead{
+    background:#1ABC9C;
+  }
+  
+  thead{
+    color:white;
+  }
+  
+  th,td{
+    text-align:center;
+    padding:10px;
+  }
+  
+  tbody tr:nth-child(even){
+    background:#ECF0F1;
+  }
+
+  tbody tr td{
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  span{
+    margin: 8px 0;
+  }
+  
+  tbody tr:hover{
+  background:#BDC3C7;
+    color:#FFFFFF;
+  }
+  
+  .fixed{
+    top:0;
+    position:fixed;
+    width:auto;
+    display:none;
+    border:none;
+  }
+  section .container-fluid div .graph{
+    border: 1px solid #1ABC9C;
+    border-radius: 4px;
+    padding: 15px;
+    width: 35%;
+  }
+section .container-fluid div .data .input-button input{
+    box-shadow: 0px 0px 0px 0px transparent;
+    border:1px solid #1ABC9C;
+    color: #b6bbbd;
+}
+
+section .container-fluid div .data .input-button button{
+    background-color: #1ABC9C;
+    color: white;
+    font-weight: bold;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.clicked{
+    background-color: #BDC3C7;
+}
+@media screen and (max-width:767px) {
+    section .container-fluid > div{
+        display: block !important;
+    }
+    section .container-fluid div .data{
+      width:98%;
+      margin: auto !important;
+    }
+
+    section .container-fluid div .graph{
+        order: 0;
+        margin: auto !important;
+        margin-top: 30px !important;
+        width: 400px;
+    }
+}
+@media screen and (max-width:440px) {
+    section .container-fluid div .data{
+      width:100%;
+      margin-left: 6px !important;
+      margin-right: 6px !important;
+    }
+
+    section .container-fluid div .graph{
+        width:100%;
+        margin-left: 6px !important;
+        margin-right: 6px !important;
+    }
+    section .container-fluid div .data .input-button{
+        display: block !important;
+    }
+    section .container-fluid div .data .input-button button{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:400px) {
+    section h1{
+        font-size: 23px;
+    }
+}
